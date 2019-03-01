@@ -46,6 +46,20 @@ public class DoublyLinkedList{
         }
     }
 
+    boolean search(Node node){
+        boolean response=false;
+        Node temp=head;
+        while(temp!=null){
+            if(temp.data==node.data){
+                response=true;
+                break;
+            }
+            temp=temp.next;
+        }
+
+        return response;
+    }
+
     //insert
     void insert(Node node){
         System.out.println("inserting node" + node.data + "at last");
