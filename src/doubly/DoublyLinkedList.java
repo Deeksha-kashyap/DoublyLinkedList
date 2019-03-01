@@ -19,6 +19,14 @@ public class DoublyLinkedList{
         }
         obj.display();
 
+        Node n5=new Node();
+        n5.data=1000;
+        if(obj.search(n5)){
+            System.out.println("element found");
+        }else{
+            System.out.println("element not found");
+        }
+
     }
 
     void display() {
